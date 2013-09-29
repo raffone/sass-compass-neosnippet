@@ -1,0 +1,279 @@
+snippet appearance
+	@include appearance(${1:value})${10}
+
+snippet box-sizing
+	@include box-sizing(${1:border-box||content-box})${10}
+
+snippet filter
+	@include filter(${1:blur||brightness||contrast||grayscale||hue-rotate||invert||opacity||saturate||sepia}(${2:#:unitless}%)})${10}
+
+snippet font-face
+	@include font-face("${1:name}", font-files(${2:rel/path/to}.ttf, ${3:#:rel/path/to}.woff, ${4:#:rel/path/to}.svg), ${5:#:rel/path/to}.eof, ${6:#:bold||<del>}, ${7:#:italic||<del>})${10}
+
+snippet background-clip
+	@include background-clip(${1:padding-box||border-box||text})${10}
+
+snippet background-origin
+	@include background-origin(${1:padding-box||border-box||content-box})${10}
+
+snippet background-size
+	@include background-size(${1:auto||contain||cover||unit})${10}
+
+snippet border-radius (bottom-left)
+	@include border-bottom-left-radius(${1:#:unitless})${10}
+
+snippet border-radius (bottom)
+	@include border-bottom-radius(${1:#:unitless})${10}
+
+snippet border-radius (bottom-right)
+	@include border-bottom-right-radius(${1:#:unitless})${10}
+
+snippet border-radius (corner)
+	@include border-corner-radius(${1top||bottom},${2:left||right},${3:#:unitless})${10}
+
+snippet border-radius (left)
+	@include border-left-radius(${1:#:unitless})${10}
+
+snippet border-radius
+	@include border-radius(${1:#:unitless})${10}
+
+snippet border-radius (right)
+	@include border-right-radius(${1:#:unitless})${10}
+
+snippet border-radius (top-left)
+	@include border-top-left-radius(${1:#:unitless})${10}
+
+snippet border-radius (top)
+	@include border-top-radius(${1:#:unitless})${10}
+
+snippet border-radius (top-right)
+	@include border-top-right-radius(${1:#:unitless})${10}
+
+# snippet box-shadow
+# 	@include box-shadow(${1:unitless} ${2:unitless} ${3:unitless} ${4:color})${10}
+
+snippet box-shadow (single)
+	@include single-box-shadow(${1:color}, ${2:#:h-offset:unit}, ${3:v-offset:#:nit}, ${4:blur:unit}, ${5:#:spread:true||false}, ${6:#:inset:true||false})${10}
+
+# snippet box-align
+# 	@include box-align(${1:start||end||center||baseline||stretch})${10}
+#
+# snippet box-direction
+# 	@include box-direction(${1:normal||reverse||inherit})${10}
+#
+# snippet box-flex-group
+# 	@include box-flex-group(${1:unitless})${10}
+#
+# snippet box-flex
+# 	@include box-flex(${1:unitless})${10}
+#
+# snippet box-lines
+# 	@include box-lines(${1:single||multiple})${10}
+#
+# snippet box-ordinal-group
+# 	@include box-ordinal-group(${1:unitless})${10}
+#
+# snippet box-orient
+# 	@include box-orient(${1:horizontal||vertical||inline-axis||block-axis||inherit})${10}
+#
+# snippet box-pack
+# 	@include box-pack(${1:start||end||center||justify})${10}
+#
+# snippet display-box
+# 	@include display-box${10}
+#
+# snippet columns-break-after
+# 	@include column-break-after(${1:auto||always||avoid||left||right||page||column||avoid-page||avoid-column})${10}
+#
+# snippet columns-break-before
+# 	@include column-break-before(${1:auto||always||avoid||left||right||page||column||avoid-page||avoid-column})${10}
+#
+# snippet columns-break-inside
+# 	@include column-break-inside(${1:auto||avoid||avoid-page||avoid-column})${10}
+#
+# snippet columns-break
+# 	@include column-break(${1:type:#:before||after||inside}, ${2:#:value:#:auto||always||avoid||left||right||page||column||avoid-page||avoid-column}) :#: auto||avoid||avoid-page||avoid-column}${10}
+#
+# snippet column-count
+# 	@include column-count(${1:count})${10}
+#
+# snippet column-gap
+# 	@include column-gap(${1:unit})${10}
+#
+# snippet column-rule-color
+# 	@include column-rule-color(${1:color})${10}
+#
+# snippet column-rule-style
+# 	@include column-rule-style(${1:solid||dashed||dotted})${10}
+#
+# snippet column-rule-width
+# 	@include column-rule-width(${1:unit})${10}
+#
+# snippet column-rule
+# 	@include column-rule(${1:width:#:unit} ${2:#:style:#:solid||dashed||dotted} ${3:#:color})${10}
+#
+# snippet column-width
+# 	@include column-width(${1:unit})${10}
+#
+# snippet columns
+# 	@include columns(${1:width} ${2:#:count})${10}
+#
+# snippet cssregions (flow-from)
+# 	@include flow-from(${1:target})${10}
+#
+# snippet cssregions (flow-into)
+# 	@include flow-into(${1:target})${10}
+
+snippet hyphens
+	@include hyphens(${1:auto||manual||none})${10}
+
+snippet word-break
+	@include word-break(${1:normal||keep-all||break-all})${10}
+
+snippet background-image
+	@include background-image(url(${1:image}))${10}
+
+# snippet background (with CSS2 Fallback)
+# 	@include background-with-css2-fallback(${1:url()||gradient-declaration})${10}
+
+snippet background
+	@include background(${1:url()||gradient-declaration})${10}
+
+snippet border-image
+	@include border-image(${1:value})${10}
+
+snippet images (content)
+	@include content("${1:value}")${10}
+
+snippet images (filter-gradient)
+alias gradient
+	@include filter-gradient(${1:start-color}, ${2:end-color}, ${3:#:vertical||horizontal})${10}
+
+snippet images (list-style-image)
+	@include list-style-image(${1:image})${10}
+
+snippet images (list-style)
+	@include list-style(${1:value})${10}
+
+snippet inline-block
+	@include inline-block(${1:alignment})${10}
+
+snippet opacity
+	@include opacity(${1:unitless})${10}
+
+snippet opacity (opaque)
+	@include opaque${10}
+
+snippet opacity (transparent)
+	@include transparent${10}
+
+snippet text-shadow (single)
+	@include single-text-shadow(${1:#:h-offset:#:unit}, ${2:v-offset:#:unit}, ${3:blur:#:unit}, ${4:#:spread:unit}, ${5:color})${10}
+
+# snippet text-shadow
+# 	@include text-shadow(${1:shadow})${10}
+
+snippet transform (apply-origin)
+	@include apply-origin(${1:x:unit|left|top|right|bottom|center}, ${2:#:y:unit|left|top|right|bottom|center}, ${3:#:z:unit|left|top|right|bottom|center}, ${4:#:3D-only:true||false})${10}
+
+snippet transform (backface-visibility)
+	@include backface-visibility(${1:visible||hidden})${10}
+
+snippet transform (create-transform)
+	@include create-transform(${1:perspective:true||false}, ${2:#:scale-x:unitless}, ${3:#:scale-y:unitless}, ${4:#:scale-z:unitless}, ${5:#:rotate-x:unitless}deg, ${6:#:rotate-y:unitless}deg, ${7:#:rotate-${10}z:unitless}deg, ${8:#:rotate3d:unitless}deg, ${9:#:trans-x:unit}, ${10:#:trans-y:unit}, ${11:trans-z:unit}, ${12:#:skew-x:unitless}deg, ${13:#:skew-y:unitless}deg, ${14:#:origin-x:unit}, ${15:#:origin-y:unit}, ${16:#:origin-z:unit}, ${17:#:3D-only:true||false})
+
+snippet transform (perspective-origin)
+	@include perspective-origin(${1:x:unit} ${2:#:y:unit})${10}
+
+snippet transform (perspective)
+	@include perspective(${1:unitless})${10}
+
+snippet transform (rotate)
+	@include rotate(${1:unitless}deg, ${2:#:perspective:true||false}, ${3:#:3D-only:true||false})${10}
+
+snippet transform (rotate3d)
+	@include rotate3d(${1:vector-x:unitless}, ${2:vector-y:unitless}, ${3:vector-z:unitless}, ${4:#:angle:#:unitless}deg, ${5:#:perspective:true||false})${10}
+
+snippet transform (rotateX)
+	@include rotateX(${1:unitless}deg, ${2:#:perspective:true||false})${10}
+
+snippet transform (rotateY)
+	@include rotateY(${1:unitless}deg, ${2:#:perspective:true||false})${10}
+
+snippet transform (rotateZ)
+	@include rotateZ(${1:unitless}deg, ${2:#:perspective:true||false}, ${3:#:3D-only:true||false})${10}
+
+snippet transform (scale)
+	@include scale(${1:x:unitless}, ${2:y:unitless}, ${3:z:unitless}, ${4:#:3D-only:true||false})${10}
+
+snippet transform (scale3d)
+	@include scale3d(${1:x:unitless}, ${2:y:unitless}, ${3:z:unitless}, ${4:#:perspective:true||false})${10}
+
+snippet transform (scaleX)
+	@include scaleX(${1:unitless}, ${2:#:perspective:true||false}, ${3:#:3D-only:true||false})${10}
+
+snippet transform (scaleY)
+	@include scaleY(${1:unitless}, ${2:#:perspective:true||false}, ${3:#:3D-only:true||false})${10}
+
+snippet transform (scaleZ)
+	@include scaleZ(${1:unitless}, ${2:#:perspective:true||false})${10}
+
+snippet transform (simple-transform)
+	@include simple-transform(${1:scale:#:unitless}, ${2:#:rotate:#:unitless}deg, ${3:#:trans-x:unit}, ${4:#:trans-y:unit}, ${5:#:skew-x:unitless}deg, ${6:#:skew-y:unitless}deg, ${7:#:origin-x:unit})${10}
+
+snippet transform (skew)
+	@include skew(${1:x:unitless}deg, ${2:y:unitless}deg, ${3:#:3D-only:true||false})${10}
+
+snippet transform (skewX)
+	@include skewX(${1:unitless}deg, ${3:#:3D-only:true||false})${10}
+
+snippet transform (skewY)
+	@include skewY(${1:unitless}deg, ${3:#:3D-only:true||false})${10}
+
+snippet transform-origin
+	@include transform-origin(${1:x:unit||left||top||right||bottom||center}, ${2:#:y:unit||left||top||right||bottom||center}, ${3:#:z:unit||left||top||right||bottom||center}, ${4:#:3D-only:true||false})${10}
+
+snippet transform-style
+	@include transform-style(${1:flat|preserve-3d})${10}
+
+snippet transform
+	@include transform(${1:transforms}, ${2:#:3D-only:true||false})${10}
+
+snippet transform2d
+	@include transform2d(${1:transform})${10}
+
+snippet transform3d
+	@include transform3d(${1:transform})${10}
+
+snippet transform (translate)
+	@include translate(${1:x:unit}, ${2:y:unit}, ${3:z:unit}, ${4:#:3D-only:true||false})${10}
+
+snippet transform (translate 3d)
+	@include translate3d(${1:x:unit}, ${2:y:unit}, ${3:z:unit}, ${4:#:perspective:true||false})${10}
+
+snippet transform (translateX)
+	@include translateX(${1:unit}, ${2:#:perspective:true||false}, ${3:#:3D-only:true||false})${10}
+
+snippet transform (translateY)
+	@include translateY(${1:unit}, ${2:#:perspective:true||false}, ${3:#:3D-only:true||false})${10}
+
+snippet transform (translateZ)
+	@include translateZ(${1:unit}, ${2:#:perspective:true||false})${10}
+
+snippet transition (single)
+	@include single-transition(${1:property}, ${2:#:duration-in-seconds}, ${3:#:ease||linear||ease-in||ease-out||ease-in-out||cubic-bezier(x1, y1, x2, y2)}, ${4:#:delay-in-seconds})${10}
+
+snippet transition-delay
+	@include transition-delay(${1:delay-in-seconds})${10}
+
+snippet transition-duration
+	@include transition-duration(${1:duration-in-seconds})${10}
+
+snippet transition-property
+	@include transition-property(${1:property})${10}
+
+snippet transition-time-function
+	@include transition-time-function(${1:ease||linear||ease-in||ease-out||ease-in-out||cubic-bezier(x1, y1, x2, y2)})${10}
+
+snippet transition
+	@include transition(${1:transition})${10}
