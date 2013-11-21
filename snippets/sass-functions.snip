@@ -1,166 +1,137 @@
-# RGB Functions
+snippet abs
+	abs(${1})${10}
 
-snippet rgb
-	rgb(${1:red}, ${2:green}, ${3:blue})${10}
+snippet adjust-color
+	adjust-color(${1})${10}
 
-# snippet rgba
-# 	rgba(${1:red}, ${2:green}, ${3:blue}, ${4:alpha})${10}
-#
-# snippet red
-# 	red(${1:color})${10}
-#
-# snippet green
-# 	green(${1:color})${10}
-#
-# snippet blue
-# 	blue(${1:color})${10}
-#
-# snippet mix
-# 	mix(${1:color}-1, ${1:color}-2, [${1:weight}])${10}
-
-
-# HSL Functions
-
-snippet hsl
-	hsl(${1:hue}, ${2:saturation}, ${3:lightness})${10}
-
-snippet hsla
-	hsla(${1:hue}, ${2:saturation}, ${3:lightness}, ${4:alpha})${10}
-
-snippet hue
-	hue(${1:color})${10}
-
-snippet saturation
-	saturation(${1:color})${10}
-
-snippet lightness
-	lightness(${1:color})${10}
-
-snippet adjust
-	adjust-hue(${1:color}, ${2:degrees})${10}
-
-snippet lighten
-	lighten(${1:color}, ${2:amount})${10}
-
-snippet darken
-	darken(${1:color}, ${2:amount})${10}
-
-snippet saturate
-	saturate(${1:color}, ${2:amount})${10}
-
-snippet desaturate
-	desaturate(${1:color}, ${2:amount})${10}
-
-snippet grayscale
-	grayscale(${1:color})${10}
-
-snippet complement
-	complement(${1:color})${10}
-
-snippet invert
-	invert(${1:color})${10}
-
-
-# Opacity Functions
+snippet adjust-hue
+	adjust-hue(${1})${10}
 
 snippet alpha
-	alpha(${1:color})${10}
-
-snippet rgba
-	rgba(${1:color}, ${2:alpha})${10}
-
-snippet fade-in
-	fade-in(${1:color}, ${2:amount})${10}
-
-snippet fade-out
-	fade-out(${1:color}, ${2:amount})${10}
-
-
-# Other Color Functions
-
-# snippet adjust-color
-# 	adjust-color(${1:color}, [${1:red}], [${1:green}], [${1:blue}], [${1:hue}], [${1:saturation}], [${1:lightness}], [${1:alpha}])${10}
-#
-# snippet scale-color
-# 	scale-color(${1:color}, [${1:red}], [${1:green}], [${1:blue}], [${1:saturation}], [${1:lightness}], [${1:alpha}])${10}
-#
-# snippet change-color
-# 	change-color(${1:color}, [${1:red}], [${1:green}], [${1:blue}], [${1:hue}], [${1:saturation}], [${1:lightness}], [${1:alpha}])${10}
-#
-# snippet ie-hex-str
-# 	ie-hex-str(${1:color})${10}
-
-# String Functions
-
-snippet unquote
-	unquote(${1:string})${10}
-
-snippet quote
-	quote(${1:string})${10}
-
-
-# Number Functions
-
-snippet percentage
-	percentage(${1:value})${10}
-
-snippet round
-	round(${1:value})${10}
-
-snippet ceil
-	ceil(${1:value})${10}
-
-snippet floor
-	floor(${1:value})${10}
-
-snippet abs
-	abs(${1:value})${10}
-
-snippet min
-	min(${1:numbers})${10}
-
-snippet max
-	max(${1:numbers})${10}
-
-
-# List Functions
-
-snippet length
-	length(${1:list})${10}
-
-snippet nth
-	nth(${1:list}, ${2:n})${10}
-
-snippet join
-	join(${1:list1}, ${2:list2}, [${3:separator}])${10}
+	alpha(${1})${10}
 
 snippet append
-	append(${1:list1}, ${2:val}, [${3:separator}])${10}
+	append(${1})${10}
 
-snippet zip
-	zip(${1:lists})${10}
+snippet blue
+	blue(${1})${10}
 
-snippet index
-	index(${1:list}, ${2:value})${10}
+snippet ceil
+	ceil(${1})${10}
 
-
-# Introspection Functions
-
-snippet type
-	type-of(${1:value})${10}
-
-snippet unit
-	unit(${1:number})${10}
-
-snippet unitless
-	unitless(${1:number})${10}
+snippet change-color
+	change-color(${1})${10}
 
 snippet comparable
-	comparable(${1:number-1}, ${2:number-2})${10}
+	comparable(${1})${10}
 
+snippet complement
+	complement(${1})${10}
 
-# Miscellaneous Functions
+snippet darken
+	darken(${1})${10}
+
+snippet desaturate
+	desaturate(${1})${10}
+
+snippet fade-in
+	fade-in(${1})${10}
+
+snippet fade-out
+	fade-out(${1})${10}
+
+snippet floor
+	floor(${1})${10}
+
+snippet grayscale
+	grayscale(${1})${10}
+
+snippet green
+	green(${1})${10}
+
+snippet hsl
+	hsl(${1})${10}
+
+snippet hsla
+	hsla(${1})${10}
+
+snippet hue
+	hue(${1})${10}
 
 snippet if
-	if(${1:condition}, ${2:if-true}, ${3:if-false})${10}
+	if(${1})${10}
 
+snippet index
+	index(${1})${10}
+
+snippet invert
+	invert(${1})${10}
+
+snippet join
+	join(${1})${10}
+
+snippet length
+	length(${1})${10}
+
+snippet lighten
+	lighten(${1})${10}
+
+snippet lightness
+	lightness(${1})${10}
+
+snippet mix
+	mix(${1})${10}
+
+snippet nth
+	nth(${1})${10}
+
+snippet opacify
+	opacify(${1})${10}
+
+snippet opacity
+	opacity(${1})${10}
+
+snippet percentage
+	percentage(${1})${10}
+
+snippet quote
+	quote(${1})${10}
+
+snippet red
+	red(${1})${10}
+
+snippet rgb
+	rgb(${1})${10}
+
+snippet rgba
+	rgba(${1})${10}
+
+snippet round
+	round(${1})${10}
+
+snippet saturate
+	saturate(${1})${10}
+
+snippet saturation
+	saturation(${1})${10}
+
+snippet scale-color
+	scale-color(${1})${10}
+
+snippet transparentize
+	transparentize(${1})${10}
+
+snippet type-of
+	type-of(${1})${10}
+
+snippet unit
+	unit(${1})${10}
+
+snippet unitless
+	unitless(${1})${10}
+
+snippet unquote
+	unquote(${1})${10}
+
+snippet zip
+	zip(${1})${10}
