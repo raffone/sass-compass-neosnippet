@@ -1,1448 +1,1455 @@
 # Visual Formatting
 
 snippet pos
-	position: relative${10}
+	position: ${1}
 
 snippet pos:s
 alias static stati stat sta
-	position: static${10}
+	position: static
 
 snippet pos:a
 alias absolute abso abs
-	position: absolute${10}
+	position: absolute
 
 snippet pos:r
 alias relative rela rel
-	position: relative${10}
+	position: relative
 
 snippet pos:f
-	position: fixed${10}
+	position: fixed
 
 snippet t
 alias to
-	top: ${1}${10}
+	top: ${1}
 
 snippet t:a
-	top: auto${10}
+	top: auto
 
 snippet r
-alias ri
-	right: ${1}${10}
+alias ri rig righ
+	right: ${1}
 
 snippet r:a
-	right: auto${10}
+	right: auto
 
 snippet b
-	bottom: ${1}${10}
+	bottom: ${1}
 
 snippet b:a
-	bottom: auto${10}
+	bottom: auto
 
 snippet l
-alias le
-	left: ${1}${10}
+alias le lef
+	left: ${1}
 
 snippet l:a
-	left: auto${10}
+	left: auto
 
 snippet z
-	z-index: ${1}${10}
+	z-index: ${1}
 
 snippet z:a
-	z-index: auto${10}
+	z-index: auto
 
 snippet fl
-	float: left${10}
+	float: ${1}
 
 snippet fl:n
 alias flono
-	float: none${10}
+	float: none
 
 snippet fl:l
 alias flole fle
-	float: left${10}
+	float: left
 
 snippet fl:r
 alias flori
-	float: right${10}
+	float: right
 
 snippet cl
-	clear: both${10}
+	clear: ${1}
 
 snippet cl:n
 alias clear
-	clear: none${10}
+	clear: none
 
 snippet cl:l
-	clear: left${10}
+	clear: left
 
 snippet cl:r
-	clear: right${10}
+	clear: right
 
 snippet cl:b
-	clear: both${10}
+	clear: both
 
 snippet d
-	display: block${10}
+	display: ${1}
 
 snippet d:n
 alias disno
-	display: none${10}
+	display: none
 
 snippet d:b
-alias block blo
-	display: block${10}
+alias block blo disblo
+	display: block
 
 snippet d:i
-	display: inline${10}
+alias dispin disin
+	display: inline
 
 snippet d:ib
 alias disinblo diinbl
-	display: inline-block${10}
+	display: inline-block
 
 snippet d:li
-	display: list-item${10}
+	display: list-item
 
 snippet d:ri
-	display: run-in${10}
+	display: run-in
 
 snippet d:cp
-	display: compact${10}
+	display: compact
 
 snippet d:tb
-	display: table${10}
+	display: table
 
 snippet d:itb
-	display: inline-table${10}
+	display: inline-table
 
 snippet d:tbcp
-	display: table-caption${10}
+	display: table-caption
 
 snippet d:tbcl
-	display: table-column${10}
+	display: table-column
 
 snippet d:tbclg
-	display: table-column-group${10}
+	display: table-column-group
 
 snippet d:tbhg
-	display: table-header-group${10}
+	display: table-header-group
 
 snippet d:tbfg
-	display: table-footer-group${10}
+	display: table-footer-group
 
 snippet d:tbr
-	display: table-row${10}
+	display: table-row
 
 snippet d:tbrg
-	display: table-row-group${10}
+	display: table-row-group
 
 snippet d:tbc
-	display: table-cell${10}
+	display: table-cell
 
 snippet d:rb
-	display: ruby${10}
+	display: ruby
 
 snippet d:rbb
-	display: ruby-base${10}
+	display: ruby-base
 
 snippet d:rbbg
-	display: ruby-base-group${10}
+	display: ruby-base-group
 
 snippet d:rbt
-	display: ruby-text${10}
+	display: ruby-text
 
 snippet d:rbtg
-	display: ruby-text-group${10}
+	display: ruby-text-group
 
 snippet v
-	visibility: hidden${10}
+	visibility: ${1}
 
 snippet v:v
-	visibility: visible${10}
+	visibility: visible
 
 snippet v:h
-	visibility: hidden${10}
+	visibility: hidden
 
 snippet v:c
-	visibility: collapse${10}
+	visibility: collapse
 
 snippet ov
-	overflow: ${1}${10}
+	overflow: ${1}
 
 snippet ov:v
 alias visible
-	overflow: visible${10}
+	overflow: visible
 
 snippet ov:h
-alias hidden
-	overflow: hidden${10}
+alias hidden hidd hide hid
+	overflow: hidden
 
 snippet ov:s
 alias scroll
-	overflow: scroll${10}
+	overflow: scroll
 
 snippet ov:a
-	overflow: auto${10}
+	overflow: auto
 
 snippet ovx
-alias hidden hidd hide hid
-	overflow-x: hidden${10}
+	overflow-x: ${1}
 
 snippet ovx:v
-	overflow-x: visible${10}
+	overflow-x: visible
 
 snippet ovx:h
-	overflow-x: hidden${10}
+	overflow-x: hidden
 
 snippet ovx:s
-	overflow-x: scroll${10}
+	overflow-x: scroll
 
 snippet ovx:a
-	overflow-x: auto${10}
+	overflow-x: auto
 
 snippet ovy
-	overflow-y: hidden${10}
+	overflow-y: ${1}
 
 snippet ovy:v
-	overflow-y: visible${10}
+	overflow-y: visible
 
 snippet ovy:h
-	overflow-y: hidden${10}
+	overflow-y: hidden
 
 snippet ovy:s
-	overflow-y: scroll${10}
+	overflow-y: scroll
 
 snippet ovy:a
-	overflow-y: auto${10}
+	overflow-y: auto
 
 snippet ovs
-	overflow-style: scrollbar${10}
+	overflow-style: ${1}
 
 snippet ovs:a
-	overflow-style: auto${10}
+	overflow-style: auto
 
 snippet ovs:s
-	overflow-style: scrollbar${10}
+	overflow-style: scrollbar
 
 snippet ovs:p
-	overflow-style: panner${10}
+	overflow-style: panner
 
 snippet ovs:m
-	overflow-style: move${10}
+	overflow-style: move
 
 snippet ovs:mq
-	overflow-style: marquee${10}
+	overflow-style: marquee
 
 snippet zoo,zm
-	zoom: 1${10}
+	zoom: 1
 
 snippet cp
-	clip: ${1}${10}
+	clip: ${1}
 
 snippet cp:a
-	clip: auto${10}
+	clip: auto
 
 snippet cp:r
-	clip: rect(top right bottom left)${10}
+	clip: rect(top right bottom left)
 
 snippet rsz
-	resize: ${1}${10}
+	resize: ${1}
 
 snippet rsz:n
-	resize: none${10}
+	resize: none
 
 snippet rsz:b
-	resize: both${10}
+	resize: both
 
 snippet rsz:h
-	resize: horizontal${10}
+	resize: horizontal
 
 snippet rsz:v
-	resize: vertical${10}
+	resize: vertical
 
 snippet cur
 alias curs
-	cursor: ${pointer}${10}
+	cursor: ${pointer}
 
 snippet cur:a
-	cursor: auto${10}
+	cursor: auto
 
 snippet cur:d
-	cursor: default${10}
+	cursor: default
 
 snippet cur:c
-	cursor: crosshair${10}
+	cursor: crosshair
 
 snippet cur:ha
-	cursor: hand${10}
+	cursor: hand
 
 snippet cur:he
-	cursor: help${10}
+	cursor: help
 
 snippet cur:m
 alias curmo
-	cursor: move${10}
+	cursor: move
 
 snippet cur:p
 alias curpo
-	cursor: pointer${10}
+	cursor: pointer
 
 snippet cur:t
-	cursor: text${10}
+	cursor: text
 
 # Margin & Padding
 
 snippet m
 alias ma mar
-	margin: ${1}${10}
+	margin: ${1}
 
 snippet m:a
-	margin: auto${10}
+	margin: auto
 
 snippet mt
 alias marto martop
-	margin-top: ${1}${10}
+	margin-top: ${1}
 
 snippet mt:a
-	margin-top: auto${10}
+	margin-top: auto
 
 snippet mr
 alias marri mari
-	margin-right: ${1}${10}
+	margin-right: ${1}
 
 snippet mr:a
-	margin-right: auto${10}
+	margin-right: auto
 
 snippet mb
 alias marbo marb maro
-	margin-bottom: ${1}${10}
+	margin-bottom: ${1}
 
 snippet mb:a
-	margin-bottom: auto${10}
+	margin-bottom: auto
 
 snippet ml
 alias marle  male
-	margin-left: ${1}${10}
+	margin-left: ${1}
 
 snippet ml:a
-	margin-left: auto${10}
+	margin-left: auto
 
 snippet p
-	padding: ${1}${10}
+alias paddi padd
+	padding: ${1}
 
 snippet pt
-alias pato paddto padt
-	padding-top: ${1}${10}
+alias paddto pato paddto padt
+	padding-top: ${1}
 
 snippet pr
-alias padri pari
-	padding-right: ${1}${10}
+alias paddri padri pari
+	padding-right: ${1}
 
 snippet pb
-alias padbo pabo
-	padding-bottom: ${1}${10}
+alias paddbo padbo pabo
+	padding-bottom: ${1}
 
 snippet pl
-alias padle pale
-	padding-left: ${1}${10}
+alias paddle padle pale
+	padding-left: ${1}
 
 # Box Sizing
 
 snippet bxz
-	box-sizing: border-box${10}
+	box-sizing: ${1}
 
 snippet bxz:cb
-	box-sizing: content-box${10}
+	box-sizing: content-box
 
 snippet bxz:bb
-	box-sizing: border-box${10}
+	box-sizing: border-box
 
 snippet bxsh
-	box-shadow: inset hoff voff blur color${10}
+	box-shadow: inset hoff voff blur color
 
 snippet bxsh:r
-	box-shadow: inset hoff voff blur spread rgb(0, 0, 0)${10}
+	box-shadow: inset hoff voff blur spread rgb(0, 0, 0)
 
 snippet bxsh:ra
-	box-shadow: inset h v blur spread rgba(0, 0, 0, .5)${10}
+	box-shadow: inset h v blur spread rgba(0, 0, 0, .5)
 
 snippet bxsh:n
-	box-shadow: none${10}
+	box-shadow: none
 
 snippet w
 alias wi wid
-	width: ${1}${10}
+	width: ${1}
 
 snippet w:a
-	width: auto${10}
+	width: auto
 
 snippet h
 alias he hei
-	height: ${1}${10}
+	height: ${1}
 
 snippet h:a
-	height: auto${10}
+	height: auto
 
 snippet maw
 alias maxwi mawi
-	max-width: ${1}${10}
+	max-width: ${1}
 
 snippet maw:n
-	max-width: none${10}
+	max-width: none
 
 snippet mah
 alias maxhe mahe
-	max-height: ${1}${10}
+	max-height: ${1}
 
 snippet mah:n
-	max-height: none${10}
+	max-height: none
 
 snippet miw
 alias minwi miwi
-	min-width: ${1}${10}
+	min-width: ${1}
 
 snippet mih
 alias minhe
-	min-height: ${1}${10}
+	min-height: ${1}
 
 # Font
 
 snippet f
-	font: ${1}${10}
+	font: ${1}
 
 snippet f+
-	font: 1em Arial,sans-serif${10}
+	font: 1em Arial,sans-serif
 
 snippet fw
 alias wei
-	font-weight: ${1}${10}
+	font-weight: ${1}
 
 snippet fw:n
 alias normal
-	font-weight: normal${10}
+	font-weight: normal
 
 snippet fw:b
 alias bold
-	font-weight: bold${10}
+	font-weight: bold
 
 snippet fw:br
 alias bolder
-	font-weight: bolder${10}
+	font-weight: bolder
 
 snippet fw:lr
 alias lighter
-	font-weight: lighter${10}
+	font-weight: lighter
 
 snippet fs
-	font-style: ${1}${10}
+	font-style: ${1}
 
 snippet fs:n
-	font-style: normal${10}
+	font-style: normal
 
 snippet fs:i
 alias italic
-	font-style: italic${10}
+	font-style: italic
 
 snippet fs:o
-	font-style: oblique${10}
+	font-style: oblique
 
 snippet fv
-	font-variant: ${1}${10}
+	font-variant: ${1}
 
 snippet fv:n
-	font-variant: normal${10}
+	font-variant: normal
 
 snippet fv:sc
 alias small-caps
-	font-variant: small-caps${10}
+	font-variant: small-caps
 
 snippet fz
 alias fosi
-	font-size: ${1}${10}
+	font-size: ${1}
 
 snippet fza
-	font-size-adjust: ${1}${10}
+	font-size-adjust: ${1}
 
 snippet fza:n
-	font-size-adjust: none${10}
+	font-size-adjust: none
 
 snippet ff
 alias foma fofam
-	font-family: ${1}${10}
+	font-family: ${1}
 
 snippet ff:s
-	font-family: serif${10}
+	font-family: serif
 
 snippet ff:ss
-	font-family: sans-serif${10}
+	font-family: sans-serif
 
 snippet ff:c
-	font-family: cursive${10}
+	font-family: cursive
 
 snippet ff:f
-	font-family: fantasy${10}
+	font-family: fantasy
 
 snippet ff:m
-	font-family: monospace${10}
+	font-family: monospace
 
 snippet ff:a
-	font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif${10}
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
 
 snippet fef
-	font-effect: ${1}${10}
+	font-effect: ${1}
 
 snippet fef:n
-	font-effect: none${10}
+	font-effect: none
 
 snippet fef:eg
-	font-effect: engrave${10}
+	font-effect: engrave
 
 snippet fef:eb
-	font-effect: emboss${10}
+	font-effect: emboss
 
 snippet fef:o
-	font-effect: outline${10}
+	font-effect: outline
 
 snippet fem
-	font-emphasize: ${1}${10}
+	font-emphasize: ${1}
 
 snippet femp
-	font-emphasize-position: ${1}${10}
+	font-emphasize-position: ${1}
 
 snippet femp:b
-	font-emphasize-position: before${10}
+	font-emphasize-position: before
 
 snippet femp:a
-	font-emphasize-position: after${10}
+	font-emphasize-position: after
 
 snippet fems
-	font-emphasize-style: ${1}${10}
+	font-emphasize-style: ${1}
 
 snippet fems:n
-	font-emphasize-style: none${10}
+	font-emphasize-style: none
 
 snippet fems:ac
-	font-emphasize-style: accent${10}
+	font-emphasize-style: accent
 
 snippet fems:dt
-	font-emphasize-style: dot${10}
+	font-emphasize-style: dot
 
 snippet fems:c
-	font-emphasize-style: circle${10}
+	font-emphasize-style: circle
 
 snippet fems:ds
-	font-emphasize-style: disc${10}
+	font-emphasize-style: disc
 
 snippet fsm
-	font-smooth: ${1}${10}
+	font-smooth: ${1}
 
 snippet fsm:a
-	font-smooth: auto${10}
+	font-smooth: auto
 
 snippet fsm:n
-	font-smooth: never${10}
+	font-smooth: never
 
 snippet fsm:aw
-	font-smooth: always${10}
+	font-smooth: always
 
 snippet fst
-	font-stretch: ${1}${10}
+	font-stretch: ${1}
 
 snippet fst:n
-	font-stretch: normal${10}
+	font-stretch: normal
 
 snippet fst:uc
-	font-stretch: ultra-condensed${10}
+	font-stretch: ultra-condensed
 
 snippet fst:ec
-	font-stretch: extra-condensed${10}
+	font-stretch: extra-condensed
 
 snippet fst:c
-	font-stretch: condensed${10}
+	font-stretch: condensed
 
 snippet fst:sc
-	font-stretch: semi-condensed${10}
+	font-stretch: semi-condensed
 
 snippet fst:se
-	font-stretch: semi-expanded${10}
+	font-stretch: semi-expanded
 
 snippet fst:e
-	font-stretch: expanded${10}
+	font-stretch: expanded
 
 snippet fst:ee
-	font-stretch: extra-expanded${10}
+	font-stretch: extra-expanded
 
 snippet fst:ue
-	font-stretch: ultra-expanded${10}
+	font-stretch: ultra-expanded
 
 #  Text
 
 snippet va
-	vertical-align: top${10}
+	vertical-align: ${1}
 
 snippet va:sup
-	vertical-align: super${10}
+	vertical-align: super
 
 snippet va:t
-	vertical-align: top${10}
+	vertical-align: top
 
 snippet va:tt
-	vertical-align: text-top${10}
+	vertical-align: text-top
 
 snippet va:m
-	vertical-align: middle${10}
+	vertical-align: middle
 
 snippet va:bl
-	vertical-align: baseline${10}
+	vertical-align: baseline
 
 snippet va:b
-	vertical-align: bottom${10}
+	vertical-align: bottom
 
 snippet va:tb
-	vertical-align: text-bottom${10}
+	vertical-align: text-bottom
 
 snippet va:sub
-	vertical-align: sub${10}
+	vertical-align: sub
 
 snippet ta
-	text-align: left${10}
+alias textali texali texa
+	text-align: ${1}
 
 snippet ta:l
-	text-align: left${10}
+alias textle
+	text-align: left
 
 snippet ta:c
-	text-align: center${10}
+alias textce textcent
+	text-align: center
 
 snippet ta:r
-	text-align: right${10}
+alias textrigh textrig textri
+	text-align: right
 
 snippet ta:j
-	text-align: justify${10}
+	text-align: justify
 
 snippet talst
-	text-align-last: ${1}${10}
+	text-align-last: ${1}
 
 snippet tal:a
-	text-align-last: auto${10}
+	text-align-last: auto
 
 snippet tal:l
-	text-align-last: left${10}
+	text-align-last: left
 
 snippet tal:c
-	text-align-last: center${10}
+	text-align-last: center
 
 snippet tal:r
-	text-align-last: right${10}
+	text-align-last: right
 
 snippet td
-	text-decoration: none${10}
+	text-decoration: ${1}
 
 snippet td:n
-	text-decoration: none${10}
+	text-decoration: none
 
 snippet td:u
-	text-decoration: underline${10}
+	text-decoration: underline
 
 snippet td:o
-	text-decoration: overline${10}
+	text-decoration: overline
 
 snippet td:l
-	text-decoration: line-through${10}
+	text-decoration: line-through
 
 snippet te
-	text-emphasis: ${1}${10}
+	text-emphasis: ${1}
 
 snippet te:n
-	text-emphasis: none${10}
+	text-emphasis: none
 
 snippet te:ac
-	text-emphasis: accent${10}
+	text-emphasis: accent
 
 snippet te:dt
-	text-emphasis: dot${10}
+	text-emphasis: dot
 
 snippet te:c
-	text-emphasis: circle${10}
+	text-emphasis: circle
 
 snippet te:ds
-	text-emphasis: disc${10}
+	text-emphasis: disc
 
 snippet te:b
-	text-emphasis: before${10}
+	text-emphasis: before
 
 snippet te:a
-	text-emphasis: after${10}
+	text-emphasis: after
 
 snippet th
-	text-height: ${1}${10}
+	text-height: ${1}
 
 snippet th:a
-	text-height: auto${10}
+	text-height: auto
 
 snippet th:f
-	text-height: font-size${10}
+	text-height: font-size
 
 snippet th:t
-	text-height: text-size${10}
+	text-height: text-size
 
 snippet th:m
-	text-height: max-size${10}
+	text-height: max-size
 
 snippet ti
-	text-indent: ${1}${10}
+	text-indent: ${1}
 
 snippet ti:-
-	text-indent: -9999px${10}
+	text-indent: -9999px
 
 snippet tj
-	text-justify: ${1}${10}
+	text-justify: ${1}
 
 snippet tj:a
-	text-justify: auto${10}
+	text-justify: auto
 
 snippet tj:iw
-	text-justify: inter-word${10}
+	text-justify: inter-word
 
 snippet tj:ii
-	text-justify: inter-ideograph${10}
+	text-justify: inter-ideograph
 
 snippet tj:ic
-	text-justify: inter-cluster${10}
+	text-justify: inter-cluster
 
 snippet tj:d
-	text-justify: distribute${10}
+	text-justify: distribute
 
 snippet tj:k
-	text-justify: kashida${10}
+	text-justify: kashida
 
 snippet tj:t
-	text-justify: tibetan${10}
+	text-justify: tibetan
 
-snippet to
-	text-outline: ${1}${10}
+snippet tot
+	text-outline: ${1}
 
-snippet to+
-	text-outline: 0 0 #000${10}
+snippet tot+
+	text-outline: 0 0 ${1}
 
-snippet to:n
-	text-outline: none${10}
+snippet tot:n
+	text-outline: none
 
 snippet tr
-	text-replace: ${1}${10}
+	text-replace: ${1}
 
 snippet tr:n
-	text-replace: none${10}
+	text-replace: none
 
 snippet tt
-	text-transform: ${1}${10}
+	text-transform: ${1}
 
 snippet tt:n
-	text-transform: none${10}
+	text-transform: none
 
 snippet tt:c
 alias capitalize
-	text-transform: capitalize${10}
+	text-transform: capitalize
 
 snippet tt:u
 alias uppercase upper upp
-	text-transform: uppercase${10}
+	text-transform: uppercase
 
 snippet tt:l
 alias lowercase lower low
-	text-transform: lowercase${10}
+	text-transform: lowercase
 
 snippet tw
-	text-wrap: ${1}${10}
+	text-wrap: ${1}
 
 snippet tw:n
-	text-wrap: normal${10}
+	text-wrap: normal
 
 snippet tw:no
-	text-wrap: none${10}
+	text-wrap: none
 
 snippet tw:u
-	text-wrap: unrestricted${10}
+	text-wrap: unrestricted
 
 snippet tw:s
-	text-wrap: suppress${10}
+	text-wrap: suppress
 
 snippet tsh
-	text-shadow: hoff voff blur #000${10}
+alias texsha tesha tesh
+	text-shadow: ${1}
 
 snippet tsh:r
-	text-shadow: h v blur rgb(0, 0, 0)${10}
+	text-shadow: h v blur rgb(0, 0, 0)
 
 snippet tsh:ra
-	text-shadow: h v blur rgba(0, 0, 0, .5)${10}
+	text-shadow: h v blur rgba(0, 0, 0, .5)
 
 snippet tsh+
-	text-shadow: 0 0 0 #000${10}
+	text-shadow: 0 0 0 ${1}
 
 snippet tsh:n
-alias texsha tesha tesh
-	text-shadow: none${10}
+	text-shadow: none
 
 snippet lh
-alias letspa lespa
-	line-height: ${1}${10}
+alias linhe lihe lih
+	line-height: ${1}
 
 snippet lts
-	letter-spacing: ${1}${10}
+	letter-spacing: ${1}
 
 snippet whs
-	white-space: ${1}${10}
+	white-space: ${1}
 
 snippet whs:n
-	white-space: normal${10}
+	white-space: normal
 
 snippet whs:p
-	white-space: pre${10}
+	white-space: pre
 
 snippet whs:nw
-	white-space: nowrap${10}
+	white-space: nowrap
 
 snippet whs:pw
-	white-space: pre-wrap${10}
+	white-space: pre-wrap
 
 snippet whs:pl
-	white-space: pre-line${10}
+	white-space: pre-line
 
 snippet whsc
-	white-space-collapse: ${1}${10}
+	white-space-collapse: ${1}
 
 snippet whsc:n
-	white-space-collapse: normal${10}
+	white-space-collapse: normal
 
 snippet whsc:k
-	white-space-collapse: keep-all${10}
+	white-space-collapse: keep-all
 
 snippet whsc:l
-	white-space-collapse: loose${10}
+	white-space-collapse: loose
 
 snippet whsc:bs
-	white-space-collapse: break-strict${10}
+	white-space-collapse: break-strict
 
 snippet whsc:ba
-	white-space-collapse: break-all${10}
+	white-space-collapse: break-all
 
 snippet wob
-	word-break: ${1}${10}
+	word-break: ${1}
 
 snippet wob:n
-	word-break: normal${10}
+	word-break: normal
 
 snippet wob:k
-	word-break: keep-all${10}
+	word-break: keep-all
 
 snippet wob:l
-	word-break: loose${10}
+	word-break: loose
 
 snippet wob:bs
-	word-break: break-strict${10}
+	word-break: break-strict
 
 snippet wob:ba
-	word-break: break-all${10}
+	word-break: break-all
 
 snippet wos
-	word-spacing: ${1}${10}
+	word-spacing: ${1}
 
 snippet wow
-	word-wrap: ${1}${10}
+	word-wrap: ${1}
 
 snippet wow:nm
-	word-wrap: normal${10}
+	word-wrap: normal
 
 snippet wow:n
-	word-wrap: none${10}
+	word-wrap: none
 
 snippet wow:u
-	word-wrap: unrestricted${10}
+	word-wrap: unrestricted
 
 snippet wow:s
-	word-wrap: suppress${10}
+	word-wrap: suppress
 
 snippet wow:b
-	word-wrap: break-word${10}
+	word-wrap: break-word
 
 # Background
 
 snippet bg
-alias back
-	background: ${1}${10}
+alias back bac ba backg
+	background: ${1}
 
 snippet bg+
-	background: #fff url() 0 0 no-repeat${10}
+	background: #fff url() 0 0 no-repeat
 
 snippet bg:n
-	background: none${10}
+	background: none
 
 snippet bgc
 alias baco bacol
-	background-color: #fff${10}
+	background-color: ${1}
 
 snippet bgc:t
 alias transparent trans
-	background-color: transparent${10}
+	background-color: transparent
 
 snippet bgi
 alias backimg bacimg baim
-	background-image: url()${10}
+	background-image: url()
 
 snippet bgi:n
-	background-image: none${10}
+	background-image: none
 
 snippet bgr
-	background-repeat: ${1}${10}
+	background-repeat: ${1}
 
 snippet bgr:n
-	background-repeat: no-repeat${10}
+	background-repeat: no-repeat
 
 snippet bgr:x
-	background-repeat: repeat-x${10}
+	background-repeat: repeat-x
 
 snippet bgr:y
-	background-repeat: repeat-y${10}
+	background-repeat: repeat-y
 
 snippet bgr:sp
-	background-repeat: space${10}
+	background-repeat: space
 
 snippet bgr:rd
-	background-repeat: round${10}
+	background-repeat: round
 
 snippet bga
-	background-attachment: ${1}${10}
+	background-attachment: ${1}
 
 snippet bga:f
-	background-attachment: fixed${10}
+	background-attachment: fixed
 
 snippet bga:s
-	background-attachment: scroll${10}
+	background-attachment: scroll
 
 snippet bgp
-	background-position: 0 0${10}
+	background-position: 0 0
 
 snippet bgpx
-	background-position-x: ${1}${10}
+	background-position-x: ${1}
 
 snippet bgpy
-	background-position-y: ${1}${10}
+	background-position-y: ${1}
 
 snippet bgbk
-	background-break: ${1}${10}
+	background-break: ${1}
 
 snippet bgbk:bb
-	background-break: bounding-box${10}
+	background-break: bounding-box
 
 snippet bgbk:eb
-	background-break: each-box${10}
+	background-break: each-box
 
 snippet bgbk:c
-	background-break: continuous${10}
+	background-break: continuous
 
 snippet bgcp
-	background-clip: padding-box${10}
+	background-clip: ${1}
 
 snippet bgcp:bb
-	background-clip: border-box${10}
+	background-clip: border-box
 
 snippet bgcp:pb
-	background-clip: padding-box${10}
+	background-clip: padding-box
 
 snippet bgcp:cb
-	background-clip: content-box${10}
+	background-clip: content-box
 
 snippet bgcp:nc
-	background-clip: no-clip${10}
+	background-clip: no-clip
 
 snippet bgo
-	background-origin: ${1}${10}
+	background-origin: ${1}
 
 snippet bgo:pb
-	background-origin: padding-box${10}
+	background-origin: padding-box
 
 snippet bgo:bb
-	background-origin: border-box${10}
+	background-origin: border-box
 
 snippet bgo:cb
-	background-origin: content-box${10}
+	background-origin: content-box
 
 snippet bgsz
-	background-size: ${1}${10}
+	background-size: ${1}
 
 snippet bgsz:a
-	background-size: auto${10}
+	background-size: auto
 
 snippet bgsz:ct
-	background-size: contain${10}
+	background-size: contain
 
 snippet bgsz:cv
-	background-size: cover${10}
+	background-size: cover
 
 # Color
 
 snippet c
-	color: ${1}${10}
+alias co col colo
+	color: ${1}
 
 snippet c:r
-	color: rgb(0, 0, 0)${10}
+	color: rgb(0, 0, 0)
 
 snippet c:ra
-	color: rgba(0, 0, 0, .5)${10}
+	color: rgba(0, 0, 0, .5)
 
 snippet op
-	opacity: ${1}${10}
+	opacity: ${1}
 
 # Generated content
 
 snippet cnt
-	content: "${1}"${10}
+alias con cont
+	content: "${1}"
 
 snippet cnt: n, ct:n
-	content: normal${10}
+	content: normal
 
 snippet cnt: oq, ct:oq
-	content: open-quote${10}
+	content: open-quote
 
 snippet cnt: noq, ct:noq
-	content: no-open-quote${10}
+	content: no-open-quote
 
 snippet cnt: cq, ct:cq
-	content: close-quote${10}
+	content: close-quote
 
 snippet cnt: ncq, ct:ncq
-	content: no-close-quote${10}
+	content: no-close-quote
 
 snippet cnt: a, ct:a
-	content: attr()${10}
+	content: attr()
 
 snippet cnt: c, ct:c
-	content: counter()${10}
+	content: counter()
 
 snippet cnt: cs, ct:cs
-	content: counters()${10}
+	content: counters()
 
 snippet ct
-	content: ${1}${10}
+	content: ${1}
 
 snippet q
-	quotes: ${1}${10}
+	quotes: ${1}
 
 snippet q:n
-	quotes: none${10}
+	quotes: none
 
 snippet q:ru
-	quotes: '\00AB' '\00BB' '\201E' '\201C'${10}
+	quotes: '\00AB' '\00BB' '\201E' '\201C'
 
 snippet q:en
-	quotes: '\201C' '\201D' '\2018' '\2019'${10}
+	quotes: '\201C' '\201D' '\2018' '\2019'
 
 snippet coi
-	counter-increment: ${1}${10}
+	counter-increment: ${1}
 
 snippet cor
-	counter-reset: ${1}${10}
+	counter-reset: ${1}
 
 # Outline
 
 snippet ol
-	outline: ${1}${10}
+	outline: ${1}
 
 snippet ol:n
-	outline: none${10}
+	outline: none
 
 snippet olo
-	outline-offset: ${1}${10}
+	outline-offset: ${1}
 
 snippet olw
-	outline-width: ${1}${10}
+	outline-width: ${1}
 
 snippet ols
-	outline-style: ${1}${10}
+	outline-style: ${1}
 
 snippet olc
-	outline-color: #000${10}
+	outline-color: ${1}
 
 snippet olc:i
-	outline-color: invert${10}
+	outline-color: invert
 
 # Tables
 
 snippet tbl
-	table-layout: ${1}${10}
+	table-layout: ${1}
 
 snippet tbl:a
-	table-layout: auto${10}
+	table-layout: auto
 
 snippet tbl:f
-	table-layout: fixed${10}
+	table-layout: fixed
 
 snippet cps
-	caption-side: ${1}${10}
+	caption-side: ${1}
 
 snippet cps:t
-	caption-side: top${10}
+	caption-side: top
 
 snippet cps:b
-	caption-side: bottom${10}
+	caption-side: bottom
 
 snippet ec
-	empty-cells: ${1}${10}
+	empty-cells: ${1}
 
 snippet ec:s
-	empty-cells: show${10}
+	empty-cells: show
 
 snippet ec:h
-	empty-cells: hide${10}
+	empty-cells: hide
 
 # Border
 
 snippet bd
 alias bo bor
-	border: ${1}${10}
+	border: ${1}
 
 snippet bd+
-	border: 1px solid #000${10}
+	border: 1px solid ${1}
 
 snippet bd:n
-	border: none${10}
+	border: none
 
 snippet bdbk
-	border-break: close${10}
+	border-break: ${1}
 
 snippet bdbk:c
-	border-break: close${10}
+	border-break: close
 
 snippet bdcl
-	border-collapse: ${1}${10}
+	border-collapse: ${1}
 
 snippet bdcl:c
-	border-collapse: collapse${10}
+	border-collapse: collapse
 
 snippet bdcl:s
-	border-collapse: separate${10}
+	border-collapse: separate
 
 snippet bdc
 alias borco boco
-	border-color: #000${10}
+	border-color: ${1}
 
 snippet bdc:t
-	border-color: transparent${10}
+	border-color: transparent
 
 snippet bdi
-	border-image: url()${10}
+	border-image: url()
 
 snippet bdi:n
-	border-image: none${10}
+	border-image: none
 
 snippet bdti
-	border-top-image: url()${10}
+	border-top-image: url()
 
 snippet bdti:n
-	border-top-image: none${10}
+	border-top-image: none
 
 snippet bdri
-	border-right-image: url()${10}
+	border-right-image: url()
 
 snippet bdri:n
-	border-right-image: none${10}
+	border-right-image: none
 
 snippet bdbi
-	border-bottom-image: url()${10}
+	border-bottom-image: url()
 
 snippet bdbi:n
-	border-bottom-image: none${10}
+	border-bottom-image: none
 
 snippet bdli
-	border-left-image: url()${10}
+	border-left-image: url()
 
 snippet bdli:n
-	border-left-image: none${10}
+	border-left-image: none
 
 snippet bdci
-	border-corner-image: url()${10}
+	border-corner-image: url()
 
 snippet bdci:n
-	border-corner-image: none${10}
+	border-corner-image: none
 
 snippet bdci:c
-	border-corner-image: continue${10}
+	border-corner-image: continue
 
 snippet bdtli
-	border-top-left-image: url()${10}
+	border-top-left-image: url()
 
 snippet bdtli:n
-	border-top-left-image: none${10}
+	border-top-left-image: none
 
 snippet bdtli:c
-	border-top-left-image: continue${10}
+	border-top-left-image: continue
 
 snippet bdtri
-	border-top-right-image: url()${10}
+	border-top-right-image: url()
 
 snippet bdtri:n
-	border-top-right-image: none${10}
+	border-top-right-image: none
 
 snippet bdtri:c
-	border-top-right-image: continue${10}
+	border-top-right-image: continue
 
 snippet bdbri
-	border-bottom-right-image: url()${10}
+	border-bottom-right-image: url()
 
 snippet bdbri:n
-	border-bottom-right-image: none${10}
+	border-bottom-right-image: none
 
 snippet bdbri:c
-	border-bottom-right-image: continue${10}
+	border-bottom-right-image: continue
 
 snippet bdbli
-	border-bottom-left-image: url()${10}
+	border-bottom-left-image: url()
 
 snippet bdbli:n
-	border-bottom-left-image: none${10}
+	border-bottom-left-image: none
 
 snippet bdbli:c
-	border-bottom-left-image: continue${10}
+	border-bottom-left-image: continue
 
 snippet bdf
-	border-fit: repeat${10}
+	border-fit: ${1}
 
 snippet bdf:c
-	border-fit: clip${10}
+	border-fit: clip
 
 snippet bdf:r
-	border-fit: repeat${10}
+	border-fit: repeat
 
 snippet bdf:sc
-	border-fit: scale${10}
+	border-fit: scale
 
 snippet bdf:st
-	border-fit: stretch${10}
+	border-fit: stretch
 
 snippet bdf:ow
-	border-fit: overwrite${10}
+	border-fit: overwrite
 
 snippet bdf:of
-	border-fit: overflow${10}
+	border-fit: overflow
 
 snippet bdf:sp
-	border-fit: space${10}
+	border-fit: space
 
 snippet bdlen
-	border-length: ${1}${10}
+	border-length: ${1}
 
 snippet bdlen:a
-	border-length: auto${10}
+	border-length: auto
 
 snippet bdsp
-	border-spacing: ${1}${10}
+	border-spacing: ${1}
 
 snippet bds
-	border-style: ${1}${10}
+	border-style: ${1}
 
 snippet bds:n
-	border-style: none${10}
+	border-style: none
 
 snippet bds:h
-	border-style: hidden${10}
+	border-style: hidden
 
 snippet bds:dt
-	border-style: dotted${10}
+	border-style: dotted
 
 snippet bds:ds
-	border-style: dashed${10}
+	border-style: dashed
 
 snippet bds:s
-	border-style: solid${10}
+	border-style: solid
 
 snippet bds:db
-	border-style: double${10}
+	border-style: double
 
 snippet bds:dtds
-	border-style: dot-dash${10}
+	border-style: dot-dash
 
 snippet bds:dtdtds
-	border-style: dot-dot-dash${10}
+	border-style: dot-dot-dash
 
 snippet bds:w
-	border-style: wave${10}
+	border-style: wave
 
 snippet bds:g
-	border-style: groove${10}
+	border-style: groove
 
 snippet bds:r
-	border-style: ridge${10}
+	border-style: ridge
 
 snippet bds:i
-	border-style: inset${10}
+	border-style: inset
 
 snippet bds:o
-	border-style: outset${10}
+	border-style: outset
 
 snippet bdw
-	border-width: ${1}${10}
+	border-width: ${1}
 
 snippet bdt
 alias borto boto bt
-	border-top: ${1}${10}
+	border-top: ${1}
 
 snippet bdt+
-	border-top: 1px solid #000${10}
+	border-top: 1px solid ${1}
 
 snippet bdt:n
-	border-top: none${10}
+	border-top: none
 
 snippet bdtw
-	border-top-width: ${1}${10}
+	border-top-width: ${1}
 
 snippet bdts
-	border-top-style: ${1}${10}
+	border-top-style: ${1}
 
 snippet bdts:n
-	border-top-style: none${10}
+	border-top-style: none
 
 snippet bdtc
-	border-top-color: #000${10}
+	border-top-color: ${1}
 
 snippet bdtc:t
-	border-top-color: transparent${10}
+	border-top-color: transparent
 
 snippet bdr
 alias borri bori br
-	border-right: ${1}${10}
+	border-right: ${1}
 
 snippet bdr+
-	border-right: 1px solid #000${10}
+	border-right: 1px solid ${1}
 
 snippet bdr:n
-	border-right: none${10}
+	border-right: none
 
 snippet bdrw
-	border-right-width: ${1}${10}
+	border-right-width: ${1}
 
 snippet bdrst
-	border-right-style: ${1}${10}
+	border-right-style: ${1}
 
 snippet bdrst:n
-	border-right-style: none${10}
+	border-right-style: none
 
 snippet bdrc
-	border-right-color: #000${10}
+	border-right-color: ${1}
 
 snippet bdrc:t
-	border-right-color: transparent${10}
+	border-right-color: transparent
 
 snippet bdb
 alias borbo bobo bb
-	border-bottom: ${1}${10}
+	border-bottom: ${1}
 
 snippet bdb+
-	border-bottom: 1px solid #000${10}
+	border-bottom: 1px solid ${1}
 
 snippet bdb:n
-	border-bottom: none${10}
+	border-bottom: none
 
 snippet bdbw
-	border-bottom-width: ${1}${10}
+	border-bottom-width: ${1}
 
 snippet bdbs
-	border-bottom-style: ${1}${10}
+	border-bottom-style: ${1}
 
 snippet bdbs:n
-	border-bottom-style: none${10}
+	border-bottom-style: none
 
 snippet bdbc
-	border-bottom-color: #000${10}
+	border-bottom-color: ${1}
 
 snippet bdbc:t
-	border-bottom-color: transparent${10}
+	border-bottom-color: transparent
 
 snippet bdl
 alias borle bole bl
-	border-left: ${1}${10}
+	border-left: ${1}
 
 snippet bdl+
-	border-left: 1px solid #000${10}
+	border-left: 1px solid ${1}
 
 snippet bdl:n
-	border-left: none${10}
+	border-left: none
 
 snippet bdlw
-	border-left-width: ${1}${10}
+	border-left-width: ${1}
 
 snippet bdls
-	border-left-style: ${1}${10}
+	border-left-style: ${1}
 
 snippet bdls:n
-	border-left-style: none${10}
+	border-left-style: none
 
 snippet bdlc
-	border-left-color: #000${10}
+	border-left-color: ${1}
 
 snippet bdlc:t
-	border-left-color: transparent${10}
+	border-left-color: transparent
 
 snippet bdrs
-	border-radius: ${1}${10}
+	border-radius: ${1}
 
 snippet bdtrrs
-	border-top-right-radius: ${1}${10}
+	border-top-right-radius: ${1}
 
 snippet bdtlrs
-	border-top-left-radius: ${1}${10}
+	border-top-left-radius: ${1}
 
 snippet bdbrrs
-	border-bottom-right-radius: ${1}${10}
+	border-bottom-right-radius: ${1}
 
 snippet bdblrs
-	border-bottom-left-radius: ${1}${10}
+	border-bottom-left-radius: ${1}
 
 # Lists
 
 snippet lis
-	list-style: ${1}${10}
+	list-style: ${1}
 
 snippet lis:n
-	list-style: none${10}
+	list-style: none
 
 snippet lisp
-	list-style-position: ${1}${10}
+	list-style-position: ${1}
 
 snippet lisp:i
-	list-style-position: inside${10}
+	list-style-position: inside
 
 snippet lisp:o
-	list-style-position: outside${10}
+	list-style-position: outside
 
 snippet list
-	list-style-type: ${1}${10}
+	list-style-type: ${1}
 
 snippet list:n
-	list-style-type: none${10}
+	list-style-type: none
 
 snippet list:d
-	list-style-type: disc${10}
+	list-style-type: disc
 
 snippet list:c
-	list-style-type: circle${10}
+	list-style-type: circle
 
 snippet list:s
-	list-style-type: square${10}
+	list-style-type: square
 
 snippet list:dc
-	list-style-type: decimal${10}
+	list-style-type: decimal
 
 snippet list:dclz
-	list-style-type: decimal-leading-zero${10}
+	list-style-type: decimal-leading-zero
 
 snippet list:lr
-	list-style-type: lower-roman${10}
+	list-style-type: lower-roman
 
 snippet list:ur
-	list-style-type: upper-roman${10}
+	list-style-type: upper-roman
 
 snippet lisi
-	list-style-image: ${1}${10}
+	list-style-image: ${1}
 
 snippet lisi:n
-	list-style-image: none${10}
+	list-style-image: none
 
